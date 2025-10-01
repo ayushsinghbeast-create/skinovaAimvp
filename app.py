@@ -1,6 +1,3 @@
-import axios from 'axios';
-import { motion, AnimatePresence } from 'framer-motion';
-
 // --- Configuration and API Setup ---
 // In a real production environment, you would use environment variables for this.
 // For Vercel deployment, the backend will be hosted at the same domain under /api.

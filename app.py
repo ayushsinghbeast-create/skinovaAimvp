@@ -663,7 +663,6 @@ const SkinAnalyzer = () => {
               <img src={image} alt="Upload Preview" className="h-full w-full object-cover" />
             ) : (
               <div className="text-center p-4">
-                <span className="text-4xl block mb-2">📸</span>
                 <p className="text-gray-500 dark:text-gray-400">Click to upload image</p>
               </div>
             )}

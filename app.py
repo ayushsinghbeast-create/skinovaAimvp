@@ -645,7 +645,6 @@ const SkinAnalyzer = () => {
 
   const StatCard = ({ title, value, icon, color }) => (
     <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-xl text-center">
-      <span className={`text-3xl mb-1 block ${color}`}>{icon}</span>
       <p className="text-lg font-bold text-gray-900 dark:text-white">{value}</p>
       <p className="text-sm text-gray-500 dark:text-gray-300">{title}</p>
     </div>

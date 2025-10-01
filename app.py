@@ -220,7 +220,6 @@ const NavItem = ({ to, icon, label, navigate, currentPath }) => {
 
 const Card = ({ children, className = '' }) => (
   <motion.div
-    className={`bg-white dark:bg-gray-800 p-6 rounded-3xl shadow-xl transition-all duration-300 ${className}`}
     initial={{ opacity: 0, y: 10 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3 }}

@@ -303,7 +303,7 @@ const Header = ({ navigate }) => {
           whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(59, 130, 246, 0.5)' }}
           whileTap={{ scale: 0.95 }}
         >
-          Quick Analysis 🚀
+          Quick Analysis 
         </motion.button>
       </div>
     </header>

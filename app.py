@@ -1014,7 +1014,7 @@ const ForumPostDetails = ({ postId, navigate }) => {
               className="flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 transition-colors"
               whileHover={{ scale: 1.1 }}
             >
-              👍 {reply.upvotes}
+              {reply.upvotes}
             </motion.button>
           </div>
         ))}

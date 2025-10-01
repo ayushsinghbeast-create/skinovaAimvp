@@ -1091,8 +1091,8 @@ const Forum = ({ currentRoute, navigate }) => {
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">{post.content.substring(0, 100)}...</p>
       <div className="flex justify-between items-center text-xs mt-2 text-gray-400 dark:text-gray-500">
-        <span>{post.replies} Replies • {post.upvotes} Upvotes</span>
-        <span>{post.author} • {post.date}</span>
+        <span>{post.replies} Replies{post.upvotes} Upvotes</span>
+        <span>{post.author}{post.date}</span>
       </div>
     </motion.div>
   );
@@ -1209,7 +1209,7 @@ const Forum = ({ currentRoute, navigate }) => {
                 className="w-full mt-4 p-3 bg-green-500 text-white font-bold rounded-xl shadow-lg hover:bg-green-600 transition-colors"
                 whileHover={{ scale: 1.02 }}
               >
-                Ask a Question ✍️
+                Ask a Question 
               </motion.button>
             </Card>
 
@@ -1319,7 +1319,7 @@ const Consult = () => {
       ) : (
         <div className="text-center p-8 bg-red-50 dark:bg-red-900/50 rounded-lg">
           <p className="text-red-700 dark:text-red-200 font-semibold">
-            🔓 Upgrade to **Premium** to access 24/7 Live Dermatologist Chat.
+            Upgrade to **Premium** to access 24/7 Live Dermatologist Chat.
           </p>
         </div>
       )}
@@ -1334,7 +1334,7 @@ const Consult = () => {
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Book a Consultation</h2>
           {!isPremium && (
             <div className="p-3 mb-4 bg-red-100 dark:bg-red-900/50 rounded-lg text-red-700 dark:text-red-200 font-semibold">
-              ⚠️ Only Premium users can book. Please upgrade!
+               Only Premium users can book. Please upgrade!
             </div>
           )}
           <form onSubmit={handleBooking} className="space-y-4">
@@ -1582,7 +1582,7 @@ const Referrals = () => {
             className="p-3 bg-green-500 text-white rounded-xl font-bold hover:bg-green-600 transition-colors"
             whileHover={{ scale: 1.02 }}
           >
-            Copy Link 📋
+            Copy Link 
           </motion.button>
         </div>
       </Card>
@@ -1795,7 +1795,7 @@ const Settings = () => {
               className="p-3 bg-purple-500 text-white rounded-xl font-bold hover:bg-purple-600 transition-colors flex items-center"
               whileHover={{ scale: 1.02 }}
             >
-              {voiceLoading ? <LoadingSpinner className="w-5 h-5 mr-2" /> : 'Start Recording 🎤'}
+              {voiceLoading ? <LoadingSpinner className="w-5 h-5 mr-2" /> : 'Start Recording '}
             </motion.button>
             {voiceTip && (
               <motion.p
@@ -1880,11 +1880,11 @@ const AppContent = () => {
       </div>
       {/* Mobile Nav Overlay */}
       <div className="fixed bottom-0 left-0 right-0 p-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 z-50 md:hidden flex justify-around">
-        <NavItem to="/dashboard" icon="🏠" label="" navigate={navigate} currentPath={path} />
-        <NavItem to="/analyzer" icon="🔍" label="" navigate={navigate} currentPath={path} />
-        <NavItem to="/academy" icon="📚" label="" navigate={navigate} currentPath={path} />
-        <NavItem to="/forum" icon="💬" label="" navigate={navigate} currentPath={path} />
-        <NavItem to="/settings" icon="⚙️" label="" navigate={navigate} currentPath={path} />
+        <NavItem to="/dashboard"  label="" navigate={navigate} currentPath={path} />
+        <NavItem to="/analyzer" label="" navigate={navigate} currentPath={path} />
+        <NavItem to="/academy"  label="" navigate={navigate} currentPath={path} />
+        <NavItem to="/forum" label="" navigate={navigate} currentPath={path} />
+        <NavItem to="/settings" label="" navigate={navigate} currentPath={path} />
       </div>
     </div>
   );

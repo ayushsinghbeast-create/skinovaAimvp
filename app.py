@@ -1457,7 +1457,7 @@ const Pricing = ({ navigate }) => {
         <ul className="text-left space-y-2 mb-8">
           {plan.features.map((feature, index) => (
             <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
-              <span className="text-green-500 mr-2">✓</span> {feature}
+              <span className="text-green-500 mr-2"></span> {feature}
             </li>
           ))}
         </ul>

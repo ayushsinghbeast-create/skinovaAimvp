@@ -854,7 +854,7 @@ const Academy = () => {
   const LessonCard = ({ lesson }) => (
     <Card className="mb-4">
       <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{lesson.title}</h3>
-      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{lesson.type} • {lesson.duration}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{lesson.type}{lesson.duration}</p>
 
       {lesson.type === 'Video' && (
         <div className="aspect-video bg-black rounded-lg overflow-hidden mb-4">
